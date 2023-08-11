@@ -3,7 +3,7 @@ import './style.scss'
 const pageNotFound = () => {
   return (
     <div>
-      error
+      pag not found
     </div>
   )
 }
