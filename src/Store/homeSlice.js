@@ -13,11 +13,11 @@ export const homeSlice = createSlice({
    },
    getGenres: (state, action) => {
         state.genres = action.payload;
-   }
+   },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { getApiConfiguration, genres} = homeSlice.actions
+export const { getApiConfiguration, getGenres} = homeSlice.actions
 
 export default homeSlice.reducer
