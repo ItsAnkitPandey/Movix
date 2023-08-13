@@ -14,15 +14,15 @@ const Toprated = () => {
         setEndpoint(tab === "Movies" ? "movie" : "tv");
     }
 
-    return (
+    return ( 
         <div className='carouselSection'>
             <ContentWrapper>
                 <span className="carouselTitle">Top Rated</span>
                 <SwitchTabs data={["Movies", "TV Shows"]} onTabChange={onTabChange} />
             </ContentWrapper>
-            <Carousel data={data?.results} loading={loading} />
+            <Carousel data={data?.results} loading={loading} endpoint={endpoint} />
         </div>
     )
 }
 
-export default Toprated
+export default Toprated;
